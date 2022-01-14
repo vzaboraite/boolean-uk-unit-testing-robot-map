@@ -31,7 +31,7 @@ describe("Test the movement functions", () => {
     });
   });
 
-  describe.only("The move up function", () => {
+  describe("The move up function", () => {
     it("should move the robot up the grid by one position", () => {
       const currentPosition = { x: 5, y: 5 };
       const nextPosition = { x: 5, y: 4 };
@@ -52,7 +52,7 @@ describe("Test the movement functions", () => {
       const currentPosition = { x: 5, y: 5 };
       const nextPosition = { x: 5, y: 6 };
 
-      expect(moveDown(currentPosition).toEqual(nextPosition));
+      expect(moveDown(currentPosition)).toEqual(nextPosition);
     });
 
     it("should not cross the boundaries", () => {
