@@ -1,4 +1,4 @@
-const { moveLeft } = require("../movement");
+const { moveLeft, moveRight, moveUp, moveDown } = require("../movement");
 
 describe("Test the movement functions", () => {
   describe("The move left function", () => {
